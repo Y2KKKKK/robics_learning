@@ -11,6 +11,6 @@ $\color{#ff69b4}{\text{MuJoCo}}$：用来**搞清楚身体怎么动**
 - 现在也支持 GPU、batch simulation，但“大规模万级并行”不是它最舒服的场景。  
 
 缺点：  
--:bangbang: 默认渲染一般，不适合直接训 VLA / 视觉策略。  
--:bangbang: 大规模并行不如 Isaac Lab。  
--:bangbang: 真机传感器（RGB-D、LiDAR）生态不如 NVIDIA。  
+- :bangbang: 默认渲染一般，不适合直接训 VLA / 视觉策略。  
+- :bangbang: 大规模并行不如 Isaac Lab。  
+- :bangbang: 真机传感器（RGB-D、LiDAR）生态不如 NVIDIA。  
