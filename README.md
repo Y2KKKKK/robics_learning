@@ -3,10 +3,10 @@
 具身智能不是“会聊天的大模型”，而是：让一个身体，看见世界、理解指令、做出动作、在真实物理里把事做成。
 
 学习人形机器人，从“大脑”开始研究会很迷茫，在此之前我们要先搞明白三件事：  
-$\color{#ff69b4}{\text{python train.py}}$
-##$\color{pink}{\textbf{1.身体怎么动？}}$    
-##$\color{pink}{\textbf{2.动作从哪来？}}$  
-##$\color{pink}{\textbf{3.任务怎么学习？又怎么让机器人有“举一反三”的能力？}}$  
+$\color{#ff69b4}{\text{python train.py}}$  
+$\color{pink}{\text{1.身体怎么动？}}$    
+$\color{pink}{\text{2.动作从哪来？}}$  
+$\color{pink}{\text{3.任务怎么学习？又怎么让机器人有“举一反三”的能力？}}$  
 
 那么我们理所当然就会想要了解：
 
