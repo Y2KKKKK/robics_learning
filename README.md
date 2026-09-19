@@ -29,7 +29,7 @@
 
 | 阶段 | 关键技术/代表项目 |
 | :--- | :--- |
-| 人体动作数据 | - |
+| 人体动作数据 | AMASS/Retargeting(动作重定向)/遥操作采集/SMPL模型 |
 | 物理化的人形控制器 | PHC / UHC |
 | 统一全身控制 | ExBody / OmniH2O / HOVER |
 | 从人学人 | HumanPlus / TeleVision |
