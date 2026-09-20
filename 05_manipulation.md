@@ -72,29 +72,6 @@
 
 ---
 
-## VLA
-
-### OpenVLA
-- 简介：
-  - 最广泛使用开源基线
-  - 7B Llama-2 骨干，Open X-Embodiment 97万条真机轨迹训练
-  - OpenVLA-OFT 并行解码+动作分块，LIBERO 成功率 97.1%。
-- GitHub:https://github.com/openvla/openvla
-
-### Octo
-- 简介：
-  -轻量通用策略
-  - 纯 Transformer + Diffusion，看图做动作，无语言模型包袱，推理速度最快的开源基准之一。
-- GitHub:https://github.com/octo-models/octo
-
-### Open X-Embodiment
-- 简介：
-  -Google DeepMind，跨本体数据集+RT-X模型
-  - 22种机器人/527个技能/16万+任务，跨机器人通用策略学习的标准数据集。
-- GitHub:https://github.com/google-deepmind/open_x_embodiment
-
----
-
 ## 全身操作 / Loco-Manipulation（与人形WBC交叉，放05）
 
 ### BEHAVIOR Robot Suite
