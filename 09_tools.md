@@ -1,38 +1,38 @@
 # Tools
 > 只放工具：仿真训练框架、RL 库、遥操作采集、重定向、数据格式、真机 SDK、部署运行时、评测。    
-> 不堆算法：动作模仿放 02，WBC 放 03，人→机放 04，操作放 05，VLA 放 06，Sim2Real 放 07，数据放 08。  
+> 动作模仿放 02，WBC 放 03，人→机放 04，操作放 05，VLA 放 06，Sim2Real 放 07，数据放 08。  
 > 本库回答：从“看论文”到“真机跑起来”中间，到底该装哪些 repo、点哪些脚本。  
 
-##  仿真 + RL 训练框架（练模型的地方）
+##  仿真 + RL训练（练模型的地方）
 
-- **Isaac Lab（NVIDIA 主推，人形/四足/操作统一）**
+- **Isaac Lab**
   - GitHub:https://github.com/isaac-sim/IsaacLab
   - 文档:https://isaac-sim.github.io/IsaacLab/
   - 来源:- NVIDIA 官方文档《Getting Started with Isaac Lab》；
          - CSDN《机器人研发开源算法选型》明确说“新用户直接从 Isaac Gym 迁到 Isaac Lab”
     
-- **legged_gym（ETH RSL，四足/双足 RL 经典基线）**
+- **legged_gym**
   - GitHub:https://github.com/leggedrobotics/legged_gym
   - 来源：CSDN 博主 weixin_28718487《足式控制、双臂操作与具身智能落地指南》
   
-- **rsl_rl（ETH RSL，腿式机器人专用 PPO）**
+- **rsl_rl**
   - GitHub:https://github.com/leggedrobotics/rsl_rl
   - 来源：同上一篇 CSDN；社区共识“legged_gym + rsl_rl 是足式 RL 标配”
   
-- **skrl（Isaac Gym / Isaac Lab / Gymnasium 通用 RL 库，入门友好）**
+- **skrl**
   - 文档:https://skrl.readthedocs.io/en/latest/intro/examples.html
   
-- **MuJoCo / mujoco_playground（学术控制/接触动力学金标准）**
+- **MuJoCo / mujoco_playground**
   - GitHub:https://github.com/google-deepmind/mujoco
   - playground:https://github.com/google-deepmind/mujoco_playground
     
-- **robosuite（模块化仿真基准）**
+- **robosuite**
   - GitHub:https://github.com/ARISE-Initiative/robosuite
     
-- **ManiSkill（GPU 并行操作仿真）**
+- **ManiSkill**
   - GitHub:https://github.com/haosulab/ManiSkill
 
-##  数据采集 / 遥操作工具（造数据的入口）
+##  数据采集/遥操作工具
 - **LeRobot（HuggingFace，统一数据格式+采集+训练+部署）**
   - GitHub:https://github.com/huggingface/lerobot
   - 来源：CSDN《机器人开源算法实战清单》称“个人开发者性价比最高起点”
@@ -51,13 +51,13 @@
 - **HOMIE / Bunny-VisionPro / ACE（综述里点名的开源遥操作）**
   - 来源：CSDN《具身机器人遥操作综述》、期刊综述《具身机器人遥操作技术与产业发展》
 
-##  重定向 / 人→机映射工具（动捕变机器人动作）
+##  重定向/shadowing工具
 - **UMR（接触保持重定向）**
   - GitHub:https://github.com/hanyang9/UMR
 - **hhtools（RoboParty 的人→人形重映射工具）**
   - 组织:https://github.com/Roboparty/Party_OS
   - 来源：微信公众号《PartyOS 开源上线》提 MimicLite / UFO / hhtools
-- **Humanoid Retarget / xGMR（SMPL/BVH→关节空间）**
+- **Humanoid Retarget / xGMR**
   - xGMR 见于国内开源全景文（RexBot 整理 420+ 项目）
 - **LocoMuJoCo（把 AMASS/LAFAN1 包成可直接训的模仿数据）**
   - GitHub:https://github.com/robfiras/loco-mujoco
@@ -70,11 +70,9 @@
 - **robomimic（离线模仿学习数据接口 + BC/CQL/BCQ）**
   - GitHub:https://github.com/ARISE-Initiative/robomimic
 - **Dexbotic（一站式 VLA 开发箱：Dexdata 格式 + π0/CogACT/OFT）**
-  - 来源：开源社《2025 中国开源报告》
 - **starVLA（VLA 公平评测基建）**
-  - 来源：同上
 
-##  真机SDK/控制中间件（上硬件才用得到）
+##  真机SDK/控制中间件
 - **ROS 2 / ros2_control**
   - GitHub:https://github.com/ros2/ros2
   - 控制层:https://github.com/ros-controls/ros2_control
@@ -85,26 +83,24 @@
   - unitree_rl_gym:https://github.com/unitreerobotics/unitree_rl_gym
   - unitree_mujoco：官网列；unitree_IL_lerobot：宇树基于 LeRobot 的采集-训练-部署框架
   - 来源：宇树官方开源页（G1/H1/Z1/Dex3 全链路）
-- **Fourier GRX Pipeline（傅利叶：URDF/MJCF/Gym/Deploy 四步）**
+- **Fourier GRX Pipeline**
   - 组织:https://github.com/FFTAI（Wiki-GRx-*、fourier-lerobot、fourier-grx-client）
 - **ROBOTIS physical_ai_tools / DynamixelSDK / cyclo***
   - 组织:https://github.com/ROBOTIS-GIT
   - 来源：ROBOTIS Physical AI 开源页（DYNAMIXEL + ROS2 + 数据集 + 部署）
-- **Walker / TianGong URDF（优必选/国资队本体资产）**
+- **Walker / TianGong URDF**
   - UBTECH:https://github.com/UBTECH-Robot
 
-##  部署 / 评测 / 胶水层（训完别只会 play.py）
+##  部署、评测
 - **IsaacLab Arena（Isaac Lab + LeRobot 数据集 + VLA 评测）**
   - GitHub:https://github.com/isaac-sim/IsaacLab-Arena
   - 来源：NVIDIA 生态文（GR1/G1/伽利略，跑 PI0/SmolVLA/ACT/DP）
 - **Wiki-GRx-Deploy（傅利叶：加载策略、下发关节命令）**
-  - 见 FFTAI 组织
-- **LeTools（乐聚：原子技能+行为树+数据+部署胶水层）**
+- **LeTools**
   - 来源：robotworld.top《The Developer Inflection Point》
-- **Party OS / MimicLite / UFO（人形训练→遥操作→Sim2Real 10 分钟级适配）**
+- **Party OS / MimicLite / UFO**
   - https//github.com/Roboparty/Party_OS
-- **TeleOpBench（遥操作模拟任务+评测工具）**
-  - 来源：具身遥操作综述
+- **TeleOpBench**
 
 ##  新手装工具的顺序
 1. Python + PyTorch + Gymnasium
@@ -122,7 +118,6 @@
 - 国内开源全景（420+ 项目）：RexBot 微信文《国内具身智能的开源全景》
 - 开源社《2025 中国开源报告·具身智能篇》:https://kaiyuanshe.github.io/2025-China-Open-Source-Report/embodied-intelligence.html
 
-> 具身方向里最容易被低估的是 tools。
-> 论文里一句“we collect 3k demos”背后是：相机同步、手柄映射、重定向、LeRobot 格式、域随机化、SDK 心跳、关节限幅、部署宕机。
-> 会调工具的人，比只会看公式的人早半年跑上真机。
-> 本库不是“收藏夹”，是“装机清单”：每个 repo 要么你装过，要么你别碰。
+> 具身方向里最容易被低估的是 tools。  
+> 论文里一句“we collect 3k demos”背后是：相机同步、手柄映射、重定向、LeRobot 格式、域随机化、SDK 心跳、关节限幅、部署宕机。  
+> 本库可以看作装机清单。  
