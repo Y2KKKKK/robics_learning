@@ -29,7 +29,7 @@
 
 ---
 
-## 人形/全身 VLA（与你的研究线强相关）
+## 人形/全身 VLA
 
 ### GR00T（NVIDIA，人形通用基础模型）
 - **简介**：多模态人形基础模型，接受语言/视频/动作输入，输出全身动作；配套 Isaac Lab + 合成数据管线。
@@ -65,23 +65,6 @@
 
 ---
 
-## 数据集与训练基础设施
-
-### Open X-Embodiment（最大开源机器人数据集）
-- **简介**：60+ 数据集、22+ 机器人、100万+ 片段，OpenVLA/Octo 训练基础。
-- **GitHub**:https://github.com/google-deepmind/open_x_embodiment
-- **项目页**:https://robotics-transformer.github.io/
-
-### LeRobot（HuggingFace 机器人学习库）
-- **简介**：统一数据集格式 + 训练框架，支持 ACT/Diffusion/TD-MPC，降低 VLA 训练门槛。
-- **GitHub**:https://github.com/huggingface/lerobot
-
-### LIBERO（操作基准，VLA 评测常用）
-- **简介**：语言条件操作基准，4 个任务套件，评测 VLA 泛化。
-- **GitHub**:https://github.com/Lifelong-Robot-Learning/LIBERO
-
----
-
 ##  前沿方向（2025-2026）
 
 ### RDT（Robot Diffusion Transformer）
@@ -106,13 +89,6 @@
 - 知乎《NVIDIA Project GR00T: 人形机器人基础模型》
 - 知乎《OpenVLA: An Open-Source Vision-Language-Action Model》
 - 知乎一般提供部分论文的部分讲解，复现主要依靠CSDN或者github
-
-##  实操路线建议
-
-1. **先跑通 Diffusion Policy**：在 LIBERO 或自己的机械臂上，理解"视觉→动作"的端到端流程。
-2. **OpenVLA / Octo 微调**：下载预训练权重，在自己的数据上微调（哪怕只有几十条）。
-3. **接到底层**：把 VLA 输出的动作目标，交给 03 WBC 或 02 的控制器执行。
-4. **真机尝试**：LeRobot + 便宜机械臂（SO-ARM100 等），跑通"说一句话→机器人做"的最小闭环。
 
 ---
 
