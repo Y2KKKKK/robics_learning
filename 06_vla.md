@@ -1,29 +1,31 @@
-# VLA：Vision-Language-Action 大模型
+# VLA 
 > 具身智能的"大脑"：看图 + 听懂话 + 输出动作。  
 > 与前面几个库的区别：
-> - 02 motion imitation：照着动捕做（底层跟踪）
-> - 03 WBC：全身怎么稳（底层执行）
-> - 04 human to robot：人怎么变成数据（数据管线）
-> - **05 manipulation：机械臂怎么抓（操作任务）**
-> - **本库 VLA：上层语义理解 → 下层动作生成的端到端范式**
+> - 02 motion imitation：照着动捕做
+> - 03 WBC：怎样做得稳
+> - 04 human to robot：人体怎么变成数据，即数据管线
+> - 05 manipulation：机械臂怎么抓
+> -  VLA：上层语义理解 → 下层动作生成的端到端范式
 
 ---
 
 ##  奠基工作
 
-### RT-1 / RT-2（Google DeepMind，开山之作）
-- **RT-1**：Transformer 直接输出离散化动作 token，语言条件操作策略。
-- **RT-2**：视觉-语言模型（PaLM-E/PaLI-X）微调出动作能力，把互联网知识迁移到机器人。
-- **GitHub（RT-2）**:https://github.com/rt2-public/rt2
-- **项目页**:https://robotics-transformer2.github.io/
+### RT-1 / RT-2
+- Google DeepMind开山之作
+  - RT-1：Transformer 直接输出离散化动作 token，语言条件操作策略。
+  - RT-2：视觉-语言模型（PaLM-E/PaLI-X）微调出动作能力，把互联网知识迁移到机器人。
+- GitHub（RT-2）:https://github.com/rt2-public/rt2
+- 项目页:https://robotics-transformer2.github.io/
 
-### OpenVLA（开源 RT-2 替代，社区主流）
-- **简介**：7B 参数，基于 Llama 2 + SigLIP + DINOv2，在 Open X-Embodiment 数据集上训练，支持多机器人，可微调。
-- **GitHub**:https://github.com/openvla/openvla
-- **项目页**:https://openvla.github.io/
+### OpenVLA
+- 开源 RT-2 替代，社区主流
+- 7B 参数，基于 Llama 2 + SigLIP + DINOv2，在 Open X-Embodiment 数据集上训练，支持多机器人，可微调。
+- GitHub:https://github.com/openvla/openvla
+- 项目页:https://openvla.github.io/
 
-### Octo（UC Berkeley，通用策略+微调友好）
-- **简介**：Transformer 架构，支持多模态输入（语言/目标图像），预训练后在新机器人上少量数据微调即可用。
+### Octo
+- Transformer 架构，支持多模态输入（语言/目标图像），预训练后在新机器人上少量数据微调即可用。
 - **GitHub**:https://github.com/octo-models/octo
 - **项目页**:https://octo-models.github.io/
 
