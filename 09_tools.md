@@ -99,7 +99,7 @@
 - **LeTools**
   - 来源：robotworld.top《The Developer Inflection Point》
 - **Party OS / MimicLite / UFO**
-  - https//github.com/Roboparty/Party_OS
+  - Github:https://github.com/Roboparty/Party_OS
 - **TeleOpBench**
 
 ##  新手装工具的顺序
