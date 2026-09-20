@@ -12,10 +12,6 @@
   - Hugging Face官方，是最友好入门平台，安装简单
   - 支持 ACT / Diffusion Policy / OpenVLA / pi0 / GR00T 等主流策略，从数据采集→训练→部署全链路打通
 - GitHub:https://github.com/huggingface/lerobot
-- **参考来源**：
-  - CSDN《如何用LeRobot快速构建你的第一个AI机器人：面向开发者的完整入门指南》
-  - CSDN《权威的具身智能机器人学习路径》（作者 qq_39777550）
-  - VnRobo《Hands-on: Fine-tune OpenVLA with LeRobot》
 
 ### RoboManipBaselines
 - 简介：
@@ -25,6 +21,7 @@
   - MuJoCo 仿真环境开箱即用
 - GitHub:https://github.com/isri-aist/RoboManipBaselines
 
+---
 
 ## 核心策略方法
 
@@ -34,17 +31,12 @@
   - 数据效率高（<100条demo），是双臂操作的事实标准。
 - GitHub:https://github.com/tonyzhaozh/act
 - ACT++（Mobile ALOHA 增强版）:https://github.com/MarkFzp/act-plus-plus
-- **参考来源**：
-  - CSDN《具身智能操作类学习路线（模仿学习与强化学习）》robotsj.cn
-  - Robotics Center《ACT vs Diffusion Policy: Which Should You Use? (2025)》
-  - ALOHA 项目主页：`https://tonyzhaozh.github.io/aloha/`
 
 ### Diffusion Policy
 - 简介：
   - 用扩散模型生成动作，擅长复杂/接触密集型操作
   - DP-T（Transformer版）适合长时域任务。
 - GitHub:https://github.com/real-stanford/diffusion_policy
-- **参考来源**：arXiv:2303.04137；CSDN 操作路线合集
 
 ### 3D Diffusion Policy (DP3)
 - 简介：
@@ -57,7 +49,8 @@
   - 输入层（深度分层）→ 表征层（多尺度）→ 动作生成层（层次化条件扩散）
   - 44个仿真任务 + 4个真机双臂任务验证。
 - 项目页:https://h3-dp.github.io/
-- **参考来源**：OpenReview 论文；清华 IIIS / 上海AI Lab / 上海期智
+
+---
 
 ##  双臂操作、灵巧手（人形操作的核心难点）
 
@@ -77,6 +70,8 @@
   - GO-1 基础模型，基于 LeRobot 数据格式，双手/移动/灵巧手全覆盖。
 - GitHub:https://github.com/OpenDriveLab/AgiBot-World
 
+---
+
 ## VLA
 
 ### OpenVLA
@@ -85,27 +80,22 @@
   - 7B Llama-2 骨干，Open X-Embodiment 97万条真机轨迹训练
   - OpenVLA-OFT 并行解码+动作分块，LIBERO 成功率 97.1%。
 - GitHub:https://github.com/openvla/openvla
-- **参考来源**：
-  - 知乎/公众号《2026具身智能模型选型全攻略》（π0.5/GR00T/OpenVLA/GO-1对比）
-  - arXiv:2406.09246；CSDN 学习路线
 
 ### Octo
 - 简介：
   -轻量通用策略
   - 纯 Transformer + Diffusion，看图做动作，无语言模型包袱，推理速度最快的开源基准之一。
 - GitHub:https://github.com/octo-models/octo
-- **参考来源**：Berkeley 官方；具身智能综述
 
 ### Open X-Embodiment
 - 简介：
   -Google DeepMind，跨本体数据集+RT-X模型
   - 22种机器人/527个技能/16万+任务，跨机器人通用策略学习的标准数据集。
 - GitHub:https://github.com/google-deepmind/open_x_embodiment
-- **参考来源**：arXiv:2310.08864；CSDN 移动操作合集
 
 ---
 
-## 5. 全身操作 / Loco-Manipulation（与人形WBC交叉，放05）
+## 全身操作 / Loco-Manipulation（与人形WBC交叉，放05）
 
 ### BEHAVIOR Robot Suite
 - 简介：
@@ -117,12 +107,10 @@
 - 简介：VR 采集人类示范 → WBC 将任务空间命令转为关节力矩 → 高效学习人形 loco-manipulation 策略。
 - GitHub:https://github.com/UT-Austin-RPL/TRILL
 - 项目页:https://ut-austin-rpl.github.io/TRILL
-- **参考来源**：IEEE Humanoids 2023；GitHub 仓库
 
 ### HOMIE
 - 简介：同构外骨骼 + 动作感应手套 + 踏板，RL 训练支持任意上身姿态下的行走/深蹲。
 - GitHub:https://github.com/OpenRobotLab/OpenHomie
-- **参考来源**：arXiv:2502；上海AI Lab 官方
 
 ### FALCON
 - 简介：
@@ -130,11 +118,12 @@
   - 学习推/拉/开门等需要大力交互的全身操作，考虑纵向力/多向力。
 - GitHub:https://github.com/LeCAR-Lab/FALCON
 - 项目页:https://lecar-lab.github.io/falcon-humanoid
-- **参考来源**：LeCAR-Lab 官方
 
 ### DemoHLM
 - 简介：每条任务仅需 1 条示范，自动合成数百到数千条成功轨迹，跨环境泛化。
 - GitHub:https://github.com/BeingBeyond/DemoHLM
+
+---
 
 ## 底层规划（WBC + MPC，与03交叉引用）
 
@@ -154,6 +143,20 @@
 
 ### Awesome Humanoid Robot Learning（人形学习全景）
 - GitHub:https://github.com/YanjieZe/awesome-humanoid-robot-learning
+
+
+## 一些blog或者资源分享推荐
+-  CSDN《如何用LeRobot快速构建你的第一个AI机器人：面向开发者的完整入门指南》
+- CSDN《权威的具身智能机器人学习路径》（作者 qq_39777550）
+- VnRobo《Hands-on: Fine-tune OpenVLA with LeRobot》
+- CSDN《具身智能操作类学习路线（模仿学习与强化学习）》robotsj.cn
+- Robotics Center《ACT vs Diffusion Policy: Which Should You Use? (2025)》
+- ALOHA 项目主页:https://tonyzhaozh.github.io/aloha/
+- 知乎/公众号《2026具身智能模型选型全攻略》（π0.5/GR00T/OpenVLA/GO-1对比）
+- Berkeley 官方；具身智能综述
+- IEEE Humanoids 2023；GitHub 仓库
+- LeCAR-Lab 官方
+
 
 
 ## 实操路线建议
