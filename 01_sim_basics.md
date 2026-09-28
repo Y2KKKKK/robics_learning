@@ -12,13 +12,13 @@
 企业一般用于做算法原型、baseline、系统辨识，不作为最终视觉训练平台。  
 **PHC / UHC / ExBody 系工作很多基于它。**
 
-** 优点：**
+**优点：**
 - 接触动力学稳：走路、跑、跌倒恢复、灵巧手、人形跟踪动作，不容易炸。
 - 单线程/CPU 上非常快，调算法飞快。
 - MJCF 模型清晰，适合做：motion imitation、locomotion、WBC baseline、RL 快速验证。
 - 现在也支持 GPU (MJX)、batch simulation，但"大规模万级并行"不是它最舒服的场景。
 
-** 缺点：**
+**缺点：**
 - :bangbang:默认渲染一般，不适合直接训 VLA / 视觉策略。
 - :bangbang:大规模并行不如 Isaac Lab。
 - :bangbang:真机传感器（RGB-D、LiDAR）生态不如 NVIDIA。
